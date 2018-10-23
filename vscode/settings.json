@@ -1,0 +1,56 @@
+{
+  "[typescript]": {
+      "editor.formatOnSave": true
+  },
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "Fira Code, Monospace",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+      80
+  ],
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[Nord]": {
+      "comments": "#616e88",
+    }
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "keyboard.dispatch": "keyCode",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "vim.useCtrlKeys": false,
+  "explorer.openEditors.visible": 0,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "workbench.statusBar.visible": true,
+  "vim.useSystemClipboard": true,
+  "workbench.activityBar.visible": false,
+  "editor.lineNumbers": "relative",
+  "activitusbar.searchViewInPanel": true,
+  "activitusbar.views": {
+    "explorer": "file-text",
+    "search": "search",
+    "scm": "repo-forked",
+    "extension.gitlens": "repo",
+    "debug": "bug",
+    "extensions": "package",
+  },
+  "window.enableMenuBarMnemonics": false,
+  "explorer.confirmDragAndDrop": false,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "window.title": "${dirty}${activeEditorMedium}",
+  "editor.fontSize": 13,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.opacity": null,
+  "editor.folding": false,
+  "editor.overviewRulerBorder": false,
+}
