@@ -1,0 +1,87 @@
+set nocompatible
+
+"==============="
+" Vim Plug Config "
+"==============="
+
+filetype off
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif	
+call plug#begin('~/.vim/plugged')
+Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-scripts/netrw.vim'
+Plug 'Valloric/MatchTagAlways'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/goyo.vim', {'for': 'markdown'}
+Plug 'godlygeek/tabular', {'for': 'markdown'}
+Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
+Plug 'reedes/vim-pencil', {'for': 'markdown'}
+call plug#end()
+
+" Theme options
+let g:airline_powerline_fonts = 1
+let g:nord_italic_comments = 1
+
+" Markdown options
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_frontmatter = 1
+
+" Color settings
+colorscheme nord
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+
+
+"===================="
+" Some basic options "
+"===================="
+set backspace=indent,eol,start  " Make backspace sane
+set cursorline                  " Highlight current line
+set hidden 
+set scrolloff=5
+set ttyfast lazyredraw
+set backup
+set backupdir=$HOME/.vimbak
+set clipboard=unnamed
+set gdefault
+set history=1000
+set incsearch
+set hlsearch
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set relativenumber number
+set showcmd
+set showmatch
+set ignorecase smartcase
+set splitbelow splitright
+set viewoptions=cursor,folds
+set wildmenu
+set wildmode=list:longest
+set autoindent smartindent nocindent
+set nowrap
+
+set mouse=a
+if &term =~ '^screen'
+  set ttymouse=xterm2
+endif
+
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
+" This goes last
+filetype plugin indent on
