@@ -17,6 +17,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-scripts/netrw.vim'
 Plug 'Valloric/MatchTagAlways'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/goyo.vim', {'for': 'markdown'}
 Plug 'godlygeek/tabular', {'for': 'markdown'}
@@ -49,6 +50,7 @@ set scrolloff=5
 set ttyfast lazyredraw
 set backup
 set backupdir=$HOME/.vimbak
+set directory=$HOME/.vimswap
 set clipboard=unnamed
 set gdefault
 set history=1000
