@@ -61,6 +61,7 @@ endif
 "===================="
 set backspace=indent,eol,start  " Make backspace sane
 set cursorline                  " Highlight current line
+set encoding=utf-8              " Set default encoding to UTF-8
 set hidden
 set scrolloff=5
 set ttyfast lazyredraw
