@@ -22,7 +22,7 @@ Plug 'Valloric/MatchTagAlways'                      " match the tags
 Plug 'junegunn/vim-easy-align'                      " align comments
 Plug 'ctrlpvim/ctrlp.vim'                           " file search
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " golang
-Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Intellisense for vim
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Intellisense for vim
 Plug 'junegunn/goyo.vim', {'for': 'markdown'}       " zen mode
 Plug 'godlygeek/tabular', {'for': 'markdown'}       " tabs for md
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'} " markdown
