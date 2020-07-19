@@ -49,7 +49,7 @@ git_branch() {
 USER='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u'
 HOST='@\h\[\033[00m\]'
 LOC=':\[\033[01;34m\]\w\[\033[00m\]'
-BRANCH=' \033[00;33m\]$(git_branch)$(git_status)\[\033[00m\]'
+BRANCH=' \033[00;33m\]$(git_branch)\[\033[00m\]'
 NEW_LINE_PROMPT='\n\$ '
 PS1=$USER$HOST$LOC$BRANCH$NEW_LINE_PROMPT
 
