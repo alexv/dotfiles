@@ -15,6 +15,11 @@ export EDITOR="$VISUAL"
 # Use vim for prompt
 set -o vi
 
+# Use neovim if we got i
+if type nvim > /dev/null 2>&1; then
+    alias vim='nvim'
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth

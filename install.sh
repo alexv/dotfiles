@@ -15,3 +15,7 @@ for file in ${files}; do
 	ln -sf $HOME/dotfiles/home/${file} $HOME/.${file}
 done
 
+echo "Creating symlink for nvim in .config dir"
+ln -s ~/.vim $HOME/.config/nvim
+ln -s ~/.vimrc $HOME/.config/nvim/init.vim
+

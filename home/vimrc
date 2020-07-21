@@ -18,12 +18,14 @@ Plug 'arcticicestudio/nord-vim'                     " best theme
 Plug 'vim-airline/vim-airline'                      " style
 Plug 'vim-airline/vim-airline-themes'               " style themes
 Plug 'tpope/vim-fugitive'                           " git support
+Plug 'tpope/vim-commentary'                         " comment support
 Plug 'airblade/vim-gitgutter'                       " git status by line
 Plug 'vim-scripts/netrw.vim'                        " file tree
 Plug 'Valloric/MatchTagAlways'                      " match the tags
 Plug 'junegunn/vim-easy-align'                      " align comments
 Plug 'ctrlpvim/ctrlp.vim'                           " file search
 Plug 'vim-scripts/restore_view.vim'                 " preserve view after close
+Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Intellisense
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } " golang
 Plug 'junegunn/goyo.vim', {'for': 'markdown'}       " zen mode
 Plug 'godlygeek/tabular', {'for': 'markdown'}       " tabs for md
@@ -81,7 +83,7 @@ set tabstop=4                        " Number of spaces a tab counts for
 set shiftwidth=2                     " Number of spaces for each step of autoindent
 set softtabstop=2                    " Number of spaces a tab counts for when editing
 set relativenumber number            " Line numbers, relative to current line
-set showcmd                          " Show VIM commands on bottom of screen
+set noshowmode                       " Don't dispay mode in command line (airline shows it)
 set ignorecase smartcase             " Smart search matching
 set splitbelow splitright            " Split down then right
 set viewoptions=cursor,folds         " Save cursor position and folds
