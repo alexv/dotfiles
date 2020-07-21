@@ -18,6 +18,7 @@ Plug 'arcticicestudio/nord-vim'                     " best theme
 Plug 'vim-airline/vim-airline'                      " style
 Plug 'vim-airline/vim-airline-themes'               " style themes
 Plug 'tpope/vim-fugitive'                           " git support
+Plug 'tpope/vim-surround'                           " surround parentheses and stuff
 Plug 'tpope/vim-commentary'                         " comment support
 Plug 'airblade/vim-gitgutter'                       " git status by line
 Plug 'vim-scripts/netrw.vim'                        " file tree
