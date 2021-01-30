@@ -1,9 +1,0 @@
-# General Git Aliases
-alias glog='git log'
-alias gcmsg='git commit -m'
-alias gaa='git add -A'
-alias gst='git status'
-alias gp='git push'
-alias gl='git pull'
-alias gco='git checkout'
-
